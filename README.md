@@ -19,8 +19,6 @@ training loop featuring:
   - held-out validation loss monitor, evaluated at θ every step;
   - EMA-smoothed val-loss tracking for readable convergence plots.
 
-All modifications stay within the paper's architectural constraints.
-Theorem 1 (per-step circuit count O(1) in d) still holds.
 
 ## Layout
 
