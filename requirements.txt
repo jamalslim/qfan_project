@@ -1,0 +1,27 @@
+# =============================================================================
+# QFAN — Quantum Feature Amplification Network
+# requirements.txt
+# =============================================================================
+
+# --- core numerics ---
+numpy>=1.26,<2.3          # first NumPy series with py3.12 wheels; <2.3 avoids
+scipy>=1.11,<1.15         # scipy.linalg.cho_factor/cho_solve, scipy.stats.norm, scipy.stats.wasserstein_distance
+scikit-learn>=1.3,<1.7    # KMeans, LogisticRegression, model_selection.train_test_split
+matplotlib>=3.8,<3.10     # plots/plot_results.py (Agg backend selected in-code)
+
+# --- quantum stack (keep these two version-*matched*) ---
+qiskit>=1.2,<2.0          # QuantumCircuit, qiskit.circuit.ParameterVector
+qiskit-aer>=0.15,<0.16    # Aer.get_backend("aer_simulator") + backend.run
+
+# =============================================================================
+# Preliminary test Qiskit 2.x (optinal)
+# The run/get_counts path still works with Aer on Qiskit 2.x, but the 1.x->2.x
+# transition removed deprecated symbols elsewhere in the ecosystem. 
+
+# Important changes, replace the two pins above with:
+#   qiskit>=2.0,<3.0
+#   qiskit-aer>=0.16
+# 
+
+#Numbers may change
+# =============================================================================
