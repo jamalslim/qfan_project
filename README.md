@@ -117,7 +117,7 @@ is the θ actually deployed for generation.
 
 ## Reference scales (d=12 CLIC dataset)
 
-Numbers below are computed directly on the included `cal_shower_img_12q.npy`.
+Numbers below are computed directly on the included dataset `cal_shower_img_12q.npy`.
 
 | Scenario | val_loss |
 |---|---|
@@ -126,24 +126,11 @@ Numbers below are computed directly on the included `cal_shower_img_12q.npy`.
 | Diagonal Gaussian matched to MC mean/std | ~0.30 |
 | Constant mean-only prediction (random-init ceiling) | ~1.77 |
 
-An `val_loss` around **0.05–0.10** after rollout refinement is in the
-paper's simulator territory (their reported MMD² ≈ 0.008 per block per
-kernel, summed B×|Σ| gives ≈0.05). Below **~0.05** surpasses the paper
-at this scale.
 
-## Verified numerical properties
-
-  - Analytic `dL/dŶ` for multi-kernel MMD² matches central finite difference
-    to **relative error ≈ 2 × 10⁻⁹** on a random (40, 3) test problem.
-  - Full analytic `dL/dθ` chain rule matches central FD to
-    **relative error ≈ 4 × 10⁻⁸** on a synthetic feature map with p_θ = 8.
-  - On a deterministic classical stand-in for `F(θ, S)`, exact-gradient
-    Adam drops val MMD² by **28.5%** in 30 epochs while SPSA at **4×** the
-    gradient budget drops it by **0.07%** (essentially flat).
 
 ## References
 
-Main references (full list in `src/qfan/__init__.py` and `train.py`):
+Main references:
 
   - Schuld, Bergholm, Gogolin, Izaac, Killoran. Phys. Rev. A 99, 032331 (2019).
     [arXiv:1811.11184] — parameter-shift rule.
