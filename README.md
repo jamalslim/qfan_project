@@ -106,13 +106,6 @@ Each epoch prints:
 epoch   N/T  train=...  val=...  ema=...  ||g||=...  ||step||=...  lr=...
 ```
 
-The relevant one for "is training working" is **`val`**: it is the
-**sum of per-block multi-kernel MMD²** computed at the current θ on a
-**held-fixed validation batch**, using the **bandwidth family fixed at
-init**. This is a stationary objective and should descend monotonically
-past the warmup phase. The `ema` column is the β=0.9 exponential moving
-average of `val`, shown for readability; it does not affect training.
-
 At the end of the run the script also prints:
 
 ```
@@ -139,9 +132,6 @@ kernel, summed B×|Σ| gives ≈0.05). Below **~0.05** surpasses the paper
 at this scale.
 
 ## Verified numerical properties
-
-These are checked in the test harness (not shipped as unit tests, but
-reproducible from the code):
 
   - Analytic `dL/dŶ` for multi-kernel MMD² matches central finite difference
     to **relative error ≈ 2 × 10⁻⁹** on a random (40, 3) test problem.
