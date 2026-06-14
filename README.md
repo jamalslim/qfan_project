@@ -7,10 +7,6 @@
 > Slim, Monaco, Rehm, Krücker, Borras.
 > *Quantum Feature Amplification Network (QFAN) as An Autoregressive Quantum Generative Model.*
 
-This codebase preserves the QFAN architecture (sketch conditioning, shared
-3-qubit PQC, Pauli feature bank, closed-form ridge decoder, post-hoc
-residual sampler, rollout refinement, copula calibration) verbatim,
-
 
 
 training loop featuring:
