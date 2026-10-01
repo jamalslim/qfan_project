@@ -1,0 +1,13 @@
+{
+ "nq": 5,
+ "p_f": 45,
+ "n_theta": 30,
+ "off_mean": 0.10645537868538092,
+ "off_std": 0.00176281603572472,
+ "epochs": 150,
+ "epochs_run": 150,
+ "statevector_dim": 32,
+ "monitor_last": 0.11011227244238031,
+ "monitor_best": 0.10271525611492957,
+ "monitor_tail_slope": -0.0010116741254273792
+}

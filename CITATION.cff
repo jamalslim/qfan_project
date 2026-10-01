@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below."
+title: "QFAN, the Quantum Feature Amplification Network"
+repository-code: "https://github.com/jamalslim/qfan_project"
+license: MIT
+authors:
+  - family-names: Slim
+    given-names: Jamal
+    orcid: "https://orcid.org/0000-0002-9418-8459"
+  - family-names: Monaco
+    given-names: Saverio
+    orcid: "https://orcid.org/0000-0001-8784-5011"
+  - family-names: Rehm
+    given-names: Florian
+    orcid: "https://orcid.org/0000-0002-8337-0239"
+  - family-names: Krücker
+    given-names: Dirk
+    orcid: "https://orcid.org/0000-0003-1610-8844"
+  - family-names: Borras
+    given-names: Kerstin
+    orcid: "https://orcid.org/0000-0003-1111-249X"
+preferred-citation:
+  type: article
+  title: "Quantum Feature Amplification Network (QFAN) as An Autoregressive Quantum Generative Model"
+  authors:
+    - family-names: Slim
+      given-names: Jamal
+    - family-names: Monaco
+      given-names: Saverio
+    - family-names: Rehm
+      given-names: Florian
+    - family-names: Krücker
+      given-names: Dirk
+    - family-names: Borras
+      given-names: Kerstin
+  year: 2026
+  identifiers:
+    - type: other
+      value: "arXiv:2605.16044"

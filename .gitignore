@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# training checkpoints and new run outputs (the paper models in outputs/ are tracked)
+outputs/ckpt_*
+outputs/model_ds1_*
+outputs/*_showers*.npz
+outputs/*.log
+
+# generated figures and tables (the scripts recreate them)
+plots_*/
+tables/
+figures/
+paper2_figures/
+figures_*/
+
+# CaloChallenge Dataset 1, downloaded and prepared locally
+*.hdf5
+data/ds1_*
+
+# LaTeX and system files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+.DS_Store
